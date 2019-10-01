@@ -74,7 +74,7 @@ namespace _8bit_emulator
                 if (SDL_GetTicks() - cycles > 1)
                 {
                     // Sólo se puede ejecutar un ciclo si no estamos esperando que el usuario pulse una tecla
-                    if (!cpu.WaitingForKeyPress)
+                    if (!cpu.WaitingForKeyPress && !detener)
                         cpu.EmularCiclo();
                     else
                     {

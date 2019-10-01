@@ -1,11 +1,6 @@
 ﻿using System;
 namespace _8bit_emulator
 {
-    class Cat
-    {
-
-    }
-
     class Program
     {
         static int Main(string[] args)
