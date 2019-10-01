@@ -76,10 +76,6 @@ namespace _8bit_emulator
                     // Sólo se puede ejecutar un ciclo si no estamos esperando que el usuario pulse una tecla
                     if (!cpu.WaitingForKeyPress && !detener)
                         cpu.EmularCiclo();
-                    else
-                    {
-                        // TODO: --> VIDEO 8 - 1:00:00
-                    }
                     cycles = SDL_GetTicks();
                 }
                 
